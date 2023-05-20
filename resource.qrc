@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>img/txt-file-icon-1194.png</file>
+        <file>img/save-download-icon-10.png</file>
+        <file>img/about.png</file>
+        <file>img/appicon.png</file>
+        <file>img/addicon1.png</file>
+    </qresource>
+</RCC>

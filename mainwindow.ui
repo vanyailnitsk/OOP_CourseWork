@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="statusTip">
+       <string/>
+      </property>
+      <column>
+       <property name="text">
+        <string>Номер рейса</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Направление</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Время вылета</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Количество мест</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Тип</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="fileOpen"/>
+    <addaction name="fileSave"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="helpAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuInfo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="fileOpen"/>
+   <addaction name="fileSave"/>
+   <addaction name="helpAbout"/>
+   <addaction name="action"/>
+  </widget>
+  <action name="fileOpen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/img/txt-file-icon-1194.png</normaloff>:/new/img/txt-file-icon-1194.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="statusTip">
+    <string>Открыть существующую базу данных</string>
+   </property>
+  </action>
+  <action name="fileSave">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/img/save-download-icon-10.png</normaloff>:/new/img/save-download-icon-10.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="statusTip">
+    <string>Сохранить базу данных</string>
+   </property>
+  </action>
+  <action name="helpAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/img/about.png</normaloff>
+     <activeon>img/about.png</activeon>:/new/img/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Объединить</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
